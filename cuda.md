@@ -1,3 +1,11 @@
+# Remove old cuda/nvidia environment:
+    sudo apt-get --purge -y remove 'cuda*
+    sudo apt-get --purge -y remove 'nvidia*'
+    sudo apt-get autoremove
+    sudo apt-get autoclean
+    sudo rm -rf /usr/local/cuda*
+    sudo reboot
+
 # Install Nvidia Driver
 
     sudo apt-get install make gcc -y
